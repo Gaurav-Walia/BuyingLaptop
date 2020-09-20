@@ -14,7 +14,6 @@ r1.on("line", (line) => {
 });
 
 r1.on("close", () => {
-    console.log(input);
     let priceRating = {};
     let priceRange = {};
     let priceArray = [];
@@ -26,14 +25,12 @@ r1.on("close", () => {
         priceRating.price = input[i].split(" ")[0];
         priceRating.rating = input[i].split(" ")[1];
         priceArray.push(priceRating);
-        console.log("PRICE ARRAY", priceArray);
     }
 
     for (let j = parseInt(laptopCount) + 2; j < input.length; j++) {
         priceRange.minRange = input[j].split(" ")[0];
         priceRange.maxRange = input[j].split(" ")[1];
         rangeArray.push(priceRange);
-        console.log("RANGE ARRAY",rangeArray);
     }
 
     for (let k = 0; k < rangeArray.length; k++) {
@@ -45,7 +42,7 @@ r1.on("close", () => {
                 maxRating.push(priceRating);
             }
         }
-        console.log(maxRating);
+        console.log("Result: ", maxRating);
     }
  });
 

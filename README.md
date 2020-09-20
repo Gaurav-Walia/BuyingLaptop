@@ -22,7 +22,7 @@ The application is used for performing the task of buying a laptop with the high
 **Development Framework(s)**: Express
 
 ### Quick Start
-1. Clone this repository (git clone https://github.com/Gaurav-Walia/fizzbuzz.git)
+1. Clone this repository (git clone https://github.com/Gaurav-Walia/BuyingLaptop.git)
 2. Run npm install to install dependencies
 3. Run npm start to build and run the application
 4. Open localhost:3000 in your browser
